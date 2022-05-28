@@ -8,8 +8,7 @@ import com.mygdx.game.Domain.Intersection;
 import java.io.IOException;
 
 public class IntersectionSerializer extends StdSerializer<Intersection> {
-    public IntersectionSerializer()
-    {
+    public IntersectionSerializer() {
         this(null);
     }
 

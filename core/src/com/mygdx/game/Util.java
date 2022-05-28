@@ -46,7 +46,7 @@ public class Util {
     public static Window confirmWindow(String title, String message, Stage stage)
     {
         Window pause = new Window(title, Stats.skin);
-        pause.setMovable(false); //So the user can't move the window
+        pause.setMovable(false);
         Table table = new Table();
         Label errorMessage = new Label(message,Stats.skin);
         table.add(errorMessage);
@@ -60,12 +60,12 @@ public class Util {
                 stage.act();
             }
         });
-        table.add(ok); //Add a new text button that unpauses the game.
+        table.add(ok);
         pause.add(table);
-        pause.pack(); //Important! Correctly scales the window after adding new elements.
+        pause.pack();
         float newWidth = errorMessage.getWidth()+20, newHeight = 200;
         pause.setBounds((Gdx.graphics.getWidth() - newWidth ) / 2,
-                (Gdx.graphics.getHeight() - newHeight ) / 2, newWidth , newHeight ); //Center on screen.
+                (Gdx.graphics.getHeight() - newHeight ) / 2, newWidth , newHeight );
         stage.addActor(pause);
         return pause;
     }

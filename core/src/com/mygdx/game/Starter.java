@@ -54,9 +54,7 @@ import java.util.List;
         mainMenu.create();
         Gdx.input.setInputProcessor(mainMenu.getStage());
         intersectionMenu = new IntersectionMenu(stats);
-        //intersectionMenu.create();
         roadMenu = new RoadMenu(stats);
-        //roadMenu.create();
         stats.setViewport(new FitViewport(0, 0, stats.getCamera()));
         Gdx.input.setInputProcessor(mainMenu.getStage());
         resize(800, 800);
@@ -104,8 +102,6 @@ import java.util.List;
             case MAIN:
                 if (Gdx.input.getInputProcessor() != mainMenu.getStage()) {
                     Gdx.input.setInputProcessor(mainMenu.getStage());
-//                    if (stats.getSelected() == null)
-//                        throw new IllegalArgumentException();
                 }
                 mainMenu.redraw();
                 mainMenu.render();
@@ -142,7 +138,6 @@ import java.util.List;
         module.addSerializer(Intersection.class, new IntersectionSerializer());
         module.addSerializer(Road.class, new RoadSerializer());
         objectMapper.registerModule(module);
-        //objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
         String intersections = null;
         String roads = null;
         try {
@@ -160,8 +155,6 @@ import java.util.List;
         }
 
         trafficLight.getScheduler().shutdown();
-
-        //save?
     }
 
     @Override

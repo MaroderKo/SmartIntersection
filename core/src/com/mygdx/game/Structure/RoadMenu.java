@@ -30,6 +30,7 @@ public class RoadMenu extends Starter {
     public RoadMenu(Stats stats) {
         this.stats = stats;
     }
+
     @Override
     public void create() {
         Vector2 vector = new Vector2();
@@ -37,16 +38,15 @@ public class RoadMenu extends Starter {
         sizeField = new TextField("Placeholder", Stats.skin);
         workloadField = new TextField("Placeholder", Stats.skin);
         reverseWorkloadField = new TextField("Placeholder", Stats.skin);
-        List<TextField> fields = Arrays.asList(nameField,sizeField,workloadField,reverseWorkloadField);
-        List<String> names = Arrays.asList("Name:","Size:","Workload:","Reverse\nworkload: ");
-        for (int i = 0; i < fields.size(); i++)
-        {
+        List<TextField> fields = Arrays.asList(nameField, sizeField, workloadField, reverseWorkloadField);
+        List<String> names = Arrays.asList("Name:", "Size:", "Workload:", "Reverse\nworkload: ");
+        for (int i = 0; i < fields.size(); i++) {
             fields.get(i).setWidth(200);
-            screenCoord(vector.set(100,40+(60*i)));
+            screenCoord(vector.set(100, 40 + (60 * i)));
             fields.get(i).setPosition(vector.x, vector.y);
             stage.addActor(fields.get(i));
             Label textLabel = new Label(names.get(i), Stats.skin);
-            screenCoord(vector.set(10,40+(60*i)));
+            screenCoord(vector.set(10, 40 + (60 * i)));
             textLabel.setPosition(vector.x, vector.y);
             stage.addActor(textLabel);
         }
@@ -55,8 +55,7 @@ public class RoadMenu extends Starter {
         workloadField.setText(String.valueOf(stats.getSelectedRoad().getWorkLoad()));
         reverseWorkloadField.setText(String.valueOf(stats.getSelectedRoad().getReverseWorkload()));
         ImageButton button = exitButton();
-        button.addListener(new ClickListener()
-        {
+        button.addListener(new ClickListener() {
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
                 System.out.println("TouchDown");
@@ -72,22 +71,18 @@ public class RoadMenu extends Starter {
                 try {
                     int sizePoints = Integer.parseInt(sizeField.getText());
                     int carPoint = Integer.parseInt(workloadField.getText());
-                    if (Util.roadNameExist(nameField.getText(),stats.getSelectedRoad()))
+                    if (Util.roadNameExist(nameField.getText(), stats.getSelectedRoad()))
                         throw new IllegalStateException();
 
                     stats.getSelectedRoad().setName(nameField.getText());
                     stats.getSelectedRoad().setSizePoints(sizePoints);
                     stats.getSelectedRoad().getWorkLoad().set(carPoint);
                     stats.setScene(Scene.INTERSECTION_INFO);
-                }
-                catch (NumberFormatException e)
-                {
-                    confirmWindow("Error", "Wrong value in Integer fields!",stage);
+                } catch (NumberFormatException e) {
+                    confirmWindow("Error", "Wrong value in Integer fields!", stage);
                     cancel();
-                }
-                catch (IllegalStateException e)
-                {
-                    confirmWindow("Error", "Road name must be unique!",stage);
+                } catch (IllegalStateException e) {
+                    confirmWindow("Error", "Road name must be unique!", stage);
                     cancel();
                 }
             }

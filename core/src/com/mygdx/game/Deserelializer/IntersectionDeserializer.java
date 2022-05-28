@@ -20,15 +20,14 @@ public class IntersectionDeserializer extends StdDeserializer<Intersection> {
     }
 
     @Override
-    public Intersection deserialize(JsonParser parser, DeserializationContext ctxt) throws IOException, JacksonException {
-        Intersection intersection = new Intersection(0,0);
+    public Intersection deserialize(JsonParser parser, DeserializationContext ctxt) throws IOException {
+        Intersection intersection = new Intersection(0, 0);
         ObjectCodec codec = parser.getCodec();
         JsonNode node = codec.readTree(parser);
         intersection.setName(node.get("name").asText());
         float x = (float) node.get("x").asDouble();
         float y = (float) node.get("y").asDouble();
-        intersection.setPosition(x,y);
-        // try catch block
+        intersection.setPosition(x, y);
         return intersection;
     }
 }

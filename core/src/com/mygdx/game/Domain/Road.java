@@ -8,42 +8,30 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Data
-public class Road{
+public class Road {
     Intersection first;
     Intersection second;
     String name;
     int sizePoints = 750;
-    AtomicInteger workLoad = new AtomicInteger(new Random().nextInt(500)+300);
+    AtomicInteger workLoad = new AtomicInteger(new Random().nextInt(500) + 300);
     AtomicInteger reverseWorkload = new AtomicInteger();
 
     public Road(Intersection first, Intersection second) {
         this.first = first;
         this.second = second;
         do {
-            name = Util.getStringFromFile("streets.txt",new Random().nextInt(515));
-        }while (Util.roadNameExist(name, this));
+            name = Util.getStringFromFile("streets.txt", new Random().nextInt(515));
+        } while (Util.roadNameExist(name, this));
 
     }
 
-    public boolean hasIntersection(@NonNull Intersection intersection)
-    {
+    public boolean hasIntersection(@NonNull Intersection intersection) {
         return first.equals(intersection) || second.equals(intersection);
     }
 
-    private void addMain(int score)
-    {
-        workLoad.addAndGet(score);
-    }
-
-    public void addReverse(int score)
-    {
-        reverseWorkload.addAndGet(score);
-    }
-
     @Override
-    public String toString()
-    {
-        return "Name="+name;
+    public String toString() {
+        return "Name=" + name;
     }
 
 

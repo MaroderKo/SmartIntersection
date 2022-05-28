@@ -61,8 +61,7 @@ public class IntersectionMenu extends Starter {
                     stage.addActor(button);
                 });
         ImageButton button = exitButton();
-        button.addListener(new ClickListener()
-        {
+        button.addListener(new ClickListener() {
             @Override
             public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
                 if (Gdx.input.isKeyPressed(Input.Keys.SHIFT_LEFT)) {
@@ -71,12 +70,10 @@ public class IntersectionMenu extends Starter {
                     stats.setSelected(null);
                     return;
                 }
-                if (MainMenu.intersections.stream().filter(i -> i != stats.selected).anyMatch(i -> i.getName().equals(nameField.getText())))
-                {
-                    confirmWindow("Error", "It is not possible to have 2 intersections with the same name!",stage);
+                if (MainMenu.intersections.stream().filter(i -> i != stats.selected).anyMatch(i -> i.getName().equals(nameField.getText()))) {
+                    confirmWindow("Error", "It is not possible to have 2 intersections with the same name!", stage);
                     cancel();
-                }
-                else {
+                } else {
                     stats.getSelected().setName(nameField.getText());
                     stats.setScene(Scene.MAIN);
                     stats.getSelected().deselect();

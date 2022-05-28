@@ -3,7 +3,6 @@ package com.mygdx.game.Structure;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -12,7 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
-import com.badlogic.gdx.scenes.scene2d.utils.*;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Null;
 import com.mygdx.game.Domain.Intersection;
@@ -23,7 +22,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -49,14 +47,12 @@ public class MainMenu extends Starter {
     boolean isDrugged = false;
     public static List<Intersection> intersections = new ArrayList<>();
     List<Road> roads = new ArrayList<>();
+
     {
         stage = new Stage();
         stage.addListener(new ClickListener() {
-            //delete select create
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-                //selection
-//                System.out.println("Click: x=" + x + " y=" + y);
                 getClick().set(x, y);
 
                 return true;
@@ -64,19 +60,15 @@ public class MainMenu extends Starter {
 
             @Override
             public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
-                // TODO: 21.05.2022
                 if (stats.getScene() == Scene.MAIN) {
                     getRelease().set(x, y);
 
-                    if (getRelease().equals(getClick()))//click Check
-                    {
+                    if (getRelease().equals(getClick())) {
                         getLastClicked().set(getRelease());
                         getClick().setZero();
                         getRelease().setZero();
                         click();
-                        return;
-                    } else // drag click?
-                    {
+                    } else {
                         isDrugged = false;
                         Intersection first = getIntersection(getClick().x, getClick().y);
                         Intersection second = getIntersection(getRelease().x, getRelease().y);
@@ -84,10 +76,7 @@ public class MainMenu extends Starter {
                             return;
                         }
                         roads.add(new Road(first, second));
-                        return;
                     }
-                } else if (stats.getScene() == Scene.INTERSECTION_INFO) {
-                    stats.getScene().name();
                 }
 
 
@@ -100,15 +89,12 @@ public class MainMenu extends Starter {
 
             @Override
             public boolean keyUp(InputEvent event, int keyCode) {
-                if (keyCode == Input.Keys.ESCAPE)
-                {
+                if (keyCode == Input.Keys.ESCAPE) {
                     stats.getSelected().deselect();
                     stats.setSelected(null);
                 }
-                if (keyCode == Input.Keys.SPACE)
-                {
+                if (keyCode == Input.Keys.SPACE) {
                     starter.getTrafficLight().setPaused(!starter.getTrafficLight().isPaused());
-                    //starter.getTrafficLight().getPauseButton().setBackground(new TextureRegionDrawable(new Texture(starter.getTrafficLight().isPaused() ? "pause.png" : "pause_started.png")));
                     starter.getTrafficLight().getPauseButton().setChecked(!starter.getTrafficLight().isPaused());
                 }
                 return true;
@@ -130,7 +116,7 @@ public class MainMenu extends Starter {
                 return;
             } else {
                 if (stats.getSelected() != null) {
-                    {//Open selected
+                    {
                         if (stats.getSelected() != null && intersection.equals(stats.getSelected())) {
                             stats.setScene(Scene.INTERSECTION_INFO);
                             return;
@@ -196,8 +182,6 @@ public class MainMenu extends Starter {
                     if (info == null) {
                         info = new Window("info", Stats.skin);
                         info.setSkin(Stats.skin);
-//                        info.setBackground(new NinePatchDrawable().tint(Color.BLACK));
-
                         Label name = new Label("Name: " + road.getName(), Stats.skin);
                         info.add(name);
                         info.row();
@@ -210,7 +194,7 @@ public class MainMenu extends Starter {
                         Label length = new Label("Length: " + road.getSizePoints(), Stats.skin);
                         info.add(length);
                         info.row();
-                        info.setWidth(Stream.of(name.getWidth(),workload.getWidth(),reverseWorkload.getWidth(),length.getWidth()).max(Float::compareTo).get()+25);
+                        info.setWidth(Stream.of(name.getWidth(), workload.getWidth(), reverseWorkload.getWidth(), length.getWidth()).max(Float::compareTo).get() + 25);
                     }
                     stage.addActor(info);
                 }
@@ -224,13 +208,13 @@ public class MainMenu extends Starter {
                 }
             });
             stage.addActor(name);
-            Label workload = new Label("w: "+ road.getWorkLoad(), Stats.skin);
+            Label workload = new Label("w: " + road.getWorkLoad(), Stats.skin);
             workload.setAlignment(Align.center);
-            workload.setPosition(center.x-workload.getWidth()/2, center.y-15);
+            workload.setPosition(center.x - workload.getWidth() / 2, center.y - 15);
             stage.addActor(workload);
-            Label reverseWorkload = new Label("rw: "+ road.getReverseWorkload(), Stats.skin);
+            Label reverseWorkload = new Label("rw: " + road.getReverseWorkload(), Stats.skin);
             reverseWorkload.setAlignment(Align.center);
-            reverseWorkload.setPosition(center.x-reverseWorkload.getWidth()/2, center.y-30);
+            reverseWorkload.setPosition(center.x - reverseWorkload.getWidth() / 2, center.y - 30);
             stage.addActor(reverseWorkload);
         }
     }
@@ -239,12 +223,9 @@ public class MainMenu extends Starter {
     public void render() {
 
 
-
         if (info != null) {
-//            info.setPosition();
             Vector2 vector2 = Util.screenCoord(new Vector2(Gdx.input.getX() + 16, Gdx.input.getY() - 16));
             info.setPosition(vector2.x, vector2.y);
-            //stage.addActor(info);
         }
 
         stats.getSr().begin(ShapeRenderer.ShapeType.Line);
@@ -256,14 +237,13 @@ public class MainMenu extends Starter {
         stage.draw();
         stage.act();
 
-        // TODO: 21.05.2022 Debug section
+        // Debug section
         if (Starter.debug) {
             stats.getSr().begin(ShapeRenderer.ShapeType.Line);
             stats.getSr().setColor(Color.BLACK);
             intersections.forEach(i -> stats.getSr().line(new Vector2(i.getArea().x, i.getArea().y), new Vector2(i.getArea().x + i.getArea().height, i.getArea().y + i.getArea().width)));
             stats.getSr().end();
         }
-        // TODO: 21.05.2022 End of the debug section
 
 
         if (isDrugged) {

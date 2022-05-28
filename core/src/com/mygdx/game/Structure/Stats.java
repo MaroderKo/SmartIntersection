@@ -24,7 +24,6 @@ public class Stats {
     Scene scene = Scene.MAIN;
     public static int Counter = 1;
     Road selectedRoad;
-
     ShapeRenderer sr = new ShapeRenderer();
     Intersection selected;
 

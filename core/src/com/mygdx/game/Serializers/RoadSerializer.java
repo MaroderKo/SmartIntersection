@@ -8,8 +8,7 @@ import com.mygdx.game.Domain.Road;
 import java.io.IOException;
 
 public class RoadSerializer extends StdSerializer<Road> {
-    public RoadSerializer()
-    {
+    public RoadSerializer() {
         this(null);
     }
 
