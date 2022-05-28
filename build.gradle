@@ -11,13 +11,18 @@ buildscript {
     dependencies {
         classpath 'org.wisepersist:gwt-gradle-plugin:1.1.16'
         classpath 'org.gretty:gretty:3.0.7'
-        
+
 
     }
 }
 
+dependencies {
+
+}
+
 allprojects {
     apply plugin: "eclipse"
+    apply plugin: "java"
 
     version = '1.0'
     ext {
@@ -79,6 +84,11 @@ project(":core") {
     dependencies {
         api "com.badlogicgames.gdx:gdx:$gdxVersion"
         api "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
-        
+        compileOnly 'org.projectlombok:lombok:1.18.24'
+        annotationProcessor 'org.projectlombok:lombok:1.18.24'
+        // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+        implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+        implementation 'commons-io:commons-io:2.11.0'
+
     }
 }

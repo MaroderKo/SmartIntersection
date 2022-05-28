@@ -1,0 +1,516 @@
+Abingdon Square
+Abraham Kazan St
+Abraham Pl
+Absecon Rd
+Academy St
+Adam Clayton Powell Jr Blvd
+Adrian Ave
+Alan St
+Albany St
+Allen St
+Amsterdam Ave
+Andes Rd
+Ann St
+Arden St
+Asser Levy Pl
+Astor Pl
+Attorney St
+Audubon Ave
+Avenue A
+Avenue B
+Avenue C
+Avenue D
+Avenue Of The Finest
+Avenue Of The Strongest
+Bank St
+Barclay St
+Barrow St
+Barry Rd
+Baruch Dr
+Baruch Pl
+Battery Park Underpass
+Battery Pl
+Baxter St
+Bayard St
+Beach St
+Beak St
+Bear Rd
+Beaver St
+Bedford St
+Beekman Pl
+Beekman St
+Bennett Ave
+Benson St
+Bernard Baruch Way
+Bethune St
+Bialystoker Pl
+Bialystoker St
+Bleecker St
+Bloomfield St
+Bogardus Pl
+Bond St
+Bradhurst Ave
+Bridge St
+Broad St
+Broadway
+Broadway Terrace
+Brooklyn Battery Tunnel
+Brooklyn Bridge
+Broome St
+Cabrini Blvd
+Canal St
+Cannon St
+Carder Rd
+Cardinal Hayes Pl
+Carlisle St
+Carmine St
+Cartigan Rd
+Cathedral Pkwy
+Catherine Ln
+Catherine Slip
+Catherine St
+Cedar St
+Center Dr
+Central Park Driveway
+Central Park N
+Central Park S
+Central Park West
+Central Rd
+Centre Market Pl
+Centre St
+Chambers St
+Charles Ln
+Charles St
+Charlton St
+Chatham Square
+Cherokee Pl
+Cherry St
+Chincoteague Rd
+Chisum Pl
+Chittenden Ave
+Christopher St
+Chrystie St
+Church St
+Claremont Ave
+Clarkson St
+Clayton Rd
+Cleveland Pl
+Cliff St
+Clinton St
+Coenties Alley
+Coenties Slip
+Collister St
+Colonel Robert Magaw Pl
+Columbia St
+Columbus Ave
+Columbus Cir
+Comfort Rd
+Commerce St
+Convent Ave
+Cooper Square
+Cooper St
+Cornelia St
+Cortlandt Alley
+Cortlandt St
+Craig Rd N
+Craig Rd S
+Crosby St
+Ctrl Park Powell Blvd Appr
+Cumming St
+De Peyster St
+Delancey St
+Delancey St S
+Desbrosses St
+Dey St
+Division Rd
+Division St
+Dominick St
+Dongan Pl
+Donnellon Square
+Doris C Freedman Pl
+Dover St
+Downing St
+Doyers St
+Duane St
+Duke Ellington Blvd
+Dutch St
+Dyckman St
+Dyer Ave
+E Broadway
+E Houston St
+E Rd
+E River Dr
+E River Piers
+East Dr
+East End Ave
+Edens Alley
+Edgar Allen Poe St
+Edgar St
+Edgecombe Ave
+Edward M Morgan Pl
+Eldert Ln
+Eldridge St
+Elizabeth St
+Elk St
+Ellwood St
+Enright Rd
+Ericsson Pl
+Escanaba Rd
+Esplanade Gardens Plaza
+Essex St
+Evans Rd
+Exchange Alley
+Exchange Pl
+Exchange Plaza
+Extra Pl
+F D R Drive Service Rd E
+Fairview Ave
+Fashion Ave
+Fdr Dr
+Fdr Drive Service Rd E
+Federal Plaza
+Ferry Line Rd
+Fletcher St
+Forsyth St
+Fort Charles Pl
+Fort George Ave
+Fort George Hill
+Fort Washington Ave
+Frankfort St
+Franklin D. Roosevelt East River Dr
+Franklin Pl
+Franklin St
+Frawley Cir
+Fred Douglass Cir
+Frederick Douglass Blvd
+Frederick Douglass Cir
+Freedom Pl
+Freeman Alley
+Front St
+Ft Tryon Pl
+Gansevoort St
+Gay St
+George Washington Bridge
+Gold St
+Gouverneur Ln
+Gouverneur Slip E
+Gouverneur Slip W
+Gouverneur St
+Gouvernour St
+Governors Is
+Gracie Square
+Gracie Terrace
+Gramercy Park E
+Gramercy Park N
+Gramercy Park S
+Gramercy Park W
+Grand Army Plaza
+Grand St
+Great Jones Alley
+Great Jones St
+Greene Ave
+Greene St
+Greenwich Ave
+Greenwich Ct
+Greenwich St
+Gresham Rd
+Grove Ct
+Grove St
+Gustave L. Levy Pl
+Half Moon Rd
+Hamilton Pl
+Hamilton Terrace
+Hancock Pl
+Hanover Square
+Hanover St
+Harlem River Dr
+Harrison St
+Haven Ave
+Hay Rd
+Hayes Pl
+Henderson Pl
+Henry Browne Block
+Henry Hudson Pkwy
+Henry St
+Henshaw St
+Hester St
+Hillside Ave
+Hogan Pl
+Holland Tunnel
+Horatio St
+Howard St
+Hubert St
+Hudson St
+Hwy 9
+Icarus Rd
+Indian Rd
+Interstate 495
+Interstate 678
+Interstate 78
+Irving Pl
+Isham St
+Jackson St
+Jacobus Pl
+James St
+Jane St
+Jay St
+Jefferson Ave
+Jefferson St
+Jersey St
+Joe Dimaggio Hwy
+John Jay Byrne Bridge
+John St
+Jones Alley
+Jones St
+Joseph P Ward St
+Jumel Pl
+Jumel Terrace
+Kenmare St
+Kimball Rd - Governors Island National Monument
+Kimmel Rd
+King Ave
+King St
+La Salle St
+Lafayette Ct
+Lafayette St
+Laguardia Pl
+Laight St
+Laurel Hill Terrace
+Legion Memorial Square
+Lenox Ave
+Lenox Terrace Pl
+Leonard St
+Leroy St
+Lewis St
+Lexington Ave
+Liberty Pl
+Liberty St
+Lillian Wald Dr
+Lincoln Center Plaza
+Lincoln Tunnel
+Lispenard St
+Little W St
+Little West 12th St
+Lloyd E Dickens Pl
+Loisaida Ave
+Ludlow St
+Luis Munoz Marin Blvd
+Mac Dougal Alley
+Macdougal St
+Macombs Dam Bridge
+Macombs Pl
+Madison Ave
+Madison Ave Bridge
+Madison Square N
+Madison St
+Magaw Pl
+Maiden Ln
+Main St
+Malcolm X Blvd
+Mangin St
+Manhattan
+Manhattan Ave
+Marble Hill Ave
+Marble Hill Ln
+Margaret Corbin Dr
+Marginal St
+Market Slip
+Market St
+Marketfield St
+Martin Luther King Blvd
+Mc Kenna Square
+Mc Nally Plaza
+Mercer St
+Meyer Square
+Mill Ln
+Milligan Pl
+Minetta Ln
+Minetta St
+Mitchell Pl
+Monroe St
+Montgomery St
+Moore St
+Morningside Ave
+Morningside Dr
+Morris St
+Morton St
+Mosco St
+Mott St
+Mt Carmel Pl
+Mt Morris Park W
+Mulberry St
+Murray St
+N Moore St
+Nagle Ave
+Nassau St
+Nathan D Perlman Pl
+New York 9a
+New York Plaza
+Norfolk St
+North End Ave
+Odell Clark Pl
+Old Broadway
+Old Slip
+Oliver St
+Orchard St
+Overlook Terrace
+Owasco Rd
+Paladino Ave
+Park Ave
+Park Ave S
+Park Pl
+Park Row
+Park Terrace E
+Park Terrace W
+Parks Ave
+Patchin Pl
+Payson Ave
+Pearl St
+Pell St
+Penn Plaza
+Perry St
+Peter Cooper Rd
+Pike Slip
+Pike St
+Pine St
+Pinehurst Ave
+Pitt St
+Platt St
+Plaza Lafayette
+Pleasant Ave
+Pomander Walk
+Post Ave
+Prince St
+Queens Midtown Tunnel
+Queensboro Bridge
+Randalls Is Rd
+Reade St
+Rector Pl
+Rector St
+Renwick St
+Ridge St
+River Rd
+River Terrace
+Riverside Blvd
+Riverside Dr
+Riverside Dr W
+Riverview Terrace
+Rivington St
+Robert F Wagner Sr Pl
+Rockefeller Plaza
+Roosevelt Island Bridge
+Rose St
+Rutgers Slip
+Rutgers St
+Rutherford Pl
+S Pinehurst Ave
+S Street Viaduct
+S William St
+Samuel Dickstein Plaza
+Seaman Ave
+Seminary Row
+Sheridan Square
+Sheriff St
+Sherman Ave
+Short Ave
+Shubert Alley
+Sickles St
+Sniffen Ct
+South End Ave
+South St
+Spring St
+Spruce St
+St Andrews Plaza
+St Clair Pl
+St James Pl
+St Johns Ln
+St Lukes Pl
+St Marks Pl
+St Nicholas Ave
+St Nicholas Pl
+St Nicholas Terrace
+Staff St
+Stanton St
+Staple St
+State St
+Stone St
+Stonewall Pl
+Stuyvesant Oval
+Stuyvesant St
+Stuyvesant Walk
+Suffolk St
+Suffolk Street Community Garden
+Sullivan St
+Sutton Pl S
+Sutton Square
+Sylvan Ct
+Sylvan Pl
+Sylvan Terrace
+Szold Pl
+Tampa Rd
+Taras Shevchenko Pl
+Terrace Dr
+(aka 72nd St Transverse Rd)
+Terrace View Ave
+Thayer St
+The Mall
+Theatre Alley
+Thelonius Monk Cir
+Thomas St
+Thompson St
+Tiemann Pl
+Trans-manhattan Expy
+Trimble Pl
+Trinity Pl
+Tudor City Pl
+Tunnel Entrance St
+Tunnel Exit St
+U.s. Highway 1
+Union Square E
+Union Square W
+United Nations Plaza
+University Pl
+Van Corlear Pl
+Vandam St
+Vanderbilt Ave
+Varick St
+Vermilyea Ave
+Vesey Pl
+Vesey St
+Vestry St
+W Houston St
+W Thames St
+W Washington Pl
+Wadsworth Ave
+Wadsworth Terrace
+Walker St
+Wall St
+Wards Is Rd
+Warren St
+Washington Bridge
+Washington Mews
+Washington Pl
+Washington Square E
+Washington Square N
+Washington Square S
+Washington Square W
+Washington St
+Washington Terrace
+Water St
+Watts St
+Waverly Pl
+Weehawken St
+West End Ave
+West St
+Wheeler Ave
+White St
+Whitehall St
+Willett St
+William St
+Williamsburg Bridge
+Willis Ave Bridge
+Wooster St
+Worth St
+Wyckoff Ave
+Yeaton Rd
+York Ave
